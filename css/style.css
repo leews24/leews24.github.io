@@ -1,6 +1,11 @@
 *, h1, h2{
   font-family: 'Montserrat', sans-serif;
 }
+
+p{
+  margin: 0;
+}
+
 h1{
   font-size:200px;
   font-weight: 200;
@@ -15,6 +20,10 @@ h2{
   margin-left: 20px;
   /* margin-bottom: 50px; */
   color:white;
+}
+
+h4{
+  margin-top: 25px;
 }
 
 ::-moz-selection {
@@ -34,24 +43,74 @@ h2{
   background-color: white;
 }
 
+#navbar-sub{
+  font-size: 10px;
+  color:#5F4B8B;
+  /* font-style: italic; */
+}
+
+.navbar-brand{
+  /* font-size: 30px; */
+  margin-left: -15px;
+}
+
 .navbar-collapse{
   padding:0 10%;
 }
 
+.navbar-nav{
+  margin-right: -20px;
+}
+
+.nav-active{
+  font-weight: 800;
+  /* border-bottom: solid 2px #5F4B8B; */
+}
+
+p.nav-link-item{
+  padding:4px;
+}
+
+.navdiv{
+  padding: 14px;
+}
+
+.nav-link-item:hover{
+  /* background-color: #5F4B8B; */
+  color:#5F4B8B;
+  font-weight: 800;
+}
+
+header {
+  margin-top: 10px;
+}
+
 .footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
-  height: 40px; /* Set the fixed height of the footer here */
-  line-height: 40px; /* Vertically center the text there */
+  height: 30px; /* Set the fixed height of the footer here */
+  line-height: 25px; /* Vertically center the text there */
   background-color: #f5f5f5;
   text-align: center;
 }
+
+#footeralt {
+  position: static;
+}
+
 .footertext{
   font-size: 10px;
 }
 
 .largediv{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.largediv2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -65,6 +124,10 @@ h2{
   margin-top: 25px;
 }
 
+.thumb-container{
+  margin-bottom: 20px;
+}
+
 .thumbnail{
   max-height: 100%;
   max-width: 100%;
@@ -72,6 +135,7 @@ h2{
 
 .thumbnail:hover{
   color:black;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.20), 0 12px 40px 0 rgba(0, 0, 0, 0.25)
 }
 
 .thumblink{
@@ -89,4 +153,9 @@ h2{
 }
 .thumb-caption-time{
   float: right;
+}
+
+#profile{
+  max-height: 100%;
+  max-width: 100%;
 }
