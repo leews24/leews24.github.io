@@ -113,7 +113,7 @@ function attackfunc(){
 
     // setTimeout(function(){$("#gui-message").text(effectmsg); }, 1500);
     if(pnewValue <= 0){
-      setTimeout(function(){$("#gui-message").text("Torchic lost the battle!"); }, 2200);
+      setTimeout(function(){$("#gui-message").text("Torchic lost the battle! Please close the window and try again."); }, 2200);
       return; return;
     } else {
       setTimeout(function(){

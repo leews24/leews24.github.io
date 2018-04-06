@@ -26,6 +26,14 @@ h4{
   margin-top: 25px;
 }
 
+a{
+  color: black;
+}
+
+a:hover{
+  color: #5F4B8B;
+}
+
 ::-moz-selection {
    background-color: #5F4B8B;
    color: white;
@@ -62,10 +70,6 @@ h4{
   padding:0 10%;
 }
 
-.navbar-nav{
-  margin-right: -20px;
-}
-
 .nav-active{
   font-weight: 800;
   /* border-bottom: solid 2px #5F4B8B; */
@@ -87,6 +91,7 @@ p.nav-link-item{
 
 header {
   margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .footer {
@@ -99,10 +104,6 @@ header {
   line-height: 25px; /* Vertically center the text there */
   background-color: #f0f0f0;
   text-align: center;
-}
-
-#footeralts {
-  position: static;
 }
 
 .footertext{
