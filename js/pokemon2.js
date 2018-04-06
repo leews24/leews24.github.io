@@ -1,6 +1,6 @@
 // window.alert("sometext");
 var audioElement = document.createElement('audio');
-audioElement.setAttribute('src', 'http://leews24.github.io/bgm.mp3');
+audioElement.setAttribute('src', 'res/bgm.mp3');
 function myFunction() {
     // alert("Hello\nHow are you?");
     $(".gui-upper").toggle();

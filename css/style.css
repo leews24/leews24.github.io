@@ -184,3 +184,44 @@ h6{
   font-style: italic;
   font-weight: 200;
 }
+
+.pikachu{
+  display:none;
+  position: fixed;
+  /* height: 10%; */
+}
+
+.pikachu-img{
+  top: -5%;
+  left: 50%;
+  /* margin-top: -456px; */
+  margin-left: -513px;
+}
+
+.pikachu-text{
+  word-wrap: break-word;
+  width: 95%;
+  height: 300px;
+  background-color: #DDD;
+  top: 60%;
+  left: 2.5%;
+  /* margin-top: 2px; */
+  /* margin-left: -513px; */
+}
+
+.contact-content{
+  margin-top: 40px;
+}
+
+.fas, .fab{
+  font-size: 30px;
+}
+
+.contact-link{
+  color: black;
+}
+
+.contact-link:hover{
+  color:#5F4B8B;
+  text-decoration: none;
+}
