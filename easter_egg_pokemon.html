@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,800" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <title>Pokemon</title>
+    <link rel="icon" href="res/favicon.ico" type="image/gif" sizes="16x16">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/pokemon.css">
+  </head>
+  <body>
+    <!-- <button onclick="myFunction()" class="play">Play</button> -->
+<div id="pokemon-game">
+  <div class="gui-upper">
+    <div class="pokemon" id="pikachu">
+      <img class="pokemon-sprite" src="https://cdn.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png">
+    </div>
+    <div class="pokemon" id="torchic">
+      <img class="pokemon-sprite" src="https://cdn.bulbagarden.net/upload/a/a0/Spr_b_5b_255_m.png">
+    </div>
+    <div class="pikachu-info health-bar" data-total="50" data-value="50">
+      <div class="bar">
+          <div class="hit"></div>
+      </div>
+      <p class="haptext">LV12 Pikachu</p><p class="hptext" id="pikachu-health">50</p><p class="hptext">/50</p>
+    </div>
+    <div class="torchic-info health-bar" data-total="40" data-value="40">
+      <div class="bar">
+          <div class="hit"></div>
+      </div>
+      <p class="hptaext">LV10 Torchic</p><p class="hptext" id="torchic-health">40</p><p class="hptext">/40</p>
+    </div>
+
+  </div>
+  <div class="gui-mid">
+    <p id="gui-message">What will Torchic do?</p>
+  </div>
+  <div class="gui-lower">
+      <button type="button" class="pokemon-menu fight">Fight</button>
+      <button type="button" class="pokemon-menu pokemon-menu-right pokemonmenu">Pokemon</button>
+      <button type="button" class="pokemon-menu item">Item</button>
+      <button type="button" class="pokemon-menu pokemon-menu-right run">Run</button>
+      <button type="button" class="pokemon-menu attacks" id="scratch">Scratch</button>
+      <button type="button" class="pokemon-menu attacks pokemon-menu-right" id="splash">Splash</button>
+      <button type="button" class="pokemon-menu attacks" id="ember">Ember</button>
+      <button type="button" class="pokemon-menu attacks pokemon-menu-right" id=""></button>
+  </div>
+</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/pokemon2.js"></script>
+  </body>
+</html>

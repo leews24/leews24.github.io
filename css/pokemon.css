@@ -1,0 +1,102 @@
+.gui-upper {
+/*   display:none; */
+  width: 420px;
+  height:250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:url(https://orig00.deviantart.net/e25b/f/2014/308/3/c/pokemon_x_and_y_battle_background_16_by_phoenixoflight92-d8594wx.png);
+  border: dotted blue 5px;
+}
+
+.hptext{
+  display:inline;
+}
+p{
+  margin:0;
+}
+.gui-mid{
+/*   display:none; */
+  width: 420px;
+  height:100px;
+  background-color:#FFF;
+  border: solid red 5px;
+/*   border: dotted blue 1px; */
+}
+
+.gui-lower{
+/*   display:none; */
+  width: 420px;
+  height:250px;
+  background-color:#F0F0F0;
+  border: dotted blue 5px;
+}
+
+.pokemon-menu{
+  width:50%;
+  height:50%;
+}
+
+.pokemon-menu-right{
+  float:right;
+}
+
+.pokemon-menu-container{
+  position:absolute;
+}
+
+.attacks{
+  display:none;
+}
+
+.pokemon {
+  position:absolute
+}
+
+#pikachu{
+  left:225px
+}
+
+#torchic{
+  top:100px;
+}
+
+.pokemon-sprite {
+  height: 200px
+}
+
+.health-bar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 175px;
+  height: 60px;
+  padding: 5px;
+  background: #ddd;
+  position:relative;
+  top: 35px;
+}
+
+.torchic-info{
+  left:245px;
+  top:100px;
+}
+
+.bar {
+  background: #c54;
+  width: 100%;
+  height: 10px;
+  position: relative;
+
+  transition: width .5s linear;
+}
+
+.hit {
+  background: rgba(255,255,255,0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0px;
+
+  transition: width .5s linear;
+}
