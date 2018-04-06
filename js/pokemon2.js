@@ -56,6 +56,7 @@ function attackfunc(){
     effectmsg="It was super effective!"
     $(".attacks").hide();
   })
+
   hitBtn.on("click", function(){
     var total = hBar.data('total'),
         value = hBar.data('value');
