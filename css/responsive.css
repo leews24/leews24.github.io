@@ -1,16 +1,85 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 0px) {
     body {
         /* background-color: lightblue; */
     }
     .largediv {
       display: none;
     }
+    h3{
+      font-size: 30px;
+    }
+    #profile{
+      display: none;
+    }
+    #contacth1{
+      font-size: 50px;
+    }
+    .contact-content{
+      margin:0;
+    }
+    .contact-item{
+      margin: 15px 0;
+    }
+    .vid-text{
+      display:block;
+    }
+    .eetext{
+    font-size: 55px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        /* background-color: lightblue; */
+    }
+    .largediv {
+      display: none;
+    }
+    h3{
+      font-size: 40px;
+    }
+    #profile{
+      display: block;
+    }
+    .onlynotsmall{
+      display: block;
+    }
+    #contacth1{
+      font-size: 100px;
+    }
+    .vid-text{
+      display:none;
+    }
+    .eetext{
+    font-size: 100px;
+    }
 }
 @media only screen and (min-width: 1201px) {
+  .largediv {
+    display: block;
+  }
   .navbar-collapse{
     padding:3px 0 0 0;
   }
   .navbar-nav{
     margin-right: -20px;
+  }
+  h3{
+    font-size: 50px;
+  }
+  .onlylarge{
+    display: block;
+  }
+  .onlynotsmall{
+    display: block;
+  }
+  #contacth1{
+    font-size: 125px;
+  }
+  .vid-text{
+    display:block;
+  }
+  .eetext{
+    font-size: 150px;
   }
 }

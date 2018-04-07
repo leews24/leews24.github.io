@@ -18,12 +18,36 @@ h2{
   font-size:20px;
   font-family: 'Montserrat', sans-serif;
   margin-left: 20px;
-  /* margin-bottom: 50px; */
   color:white;
 }
 
 h4{
   margin-top: 25px;
+}
+
+h3{
+  margin: 0;
+  padding: 0;
+}
+
+h5{
+  font-weight: 800;
+  font-size: 35px;
+  margin: 0;
+}
+
+h6{
+  font-weight: 200;
+  font-style: italic;
+  margin: 0;
+}
+
+.onlylarge{
+  display: none;
+}
+
+.onlynotsmall{
+  display:none;
 }
 
 a{
@@ -58,11 +82,9 @@ a:hover{
 #navbar-sub{
   font-size: 10px;
   color:#5F4B8B;
-  /* font-style: italic; */
 }
 
 .navbar-brand{
-  /* font-size: 30px; */
   margin-left: -15px;
 }
 
@@ -71,12 +93,13 @@ a:hover{
 }
 
 .nav-active{
-  font-weight: 800;
-  /* border-bottom: solid 2px #5F4B8B; */
+  font-weight: 800 !important;
 }
 
 p.nav-link-item{
   padding:4px;
+  -webkit-transition: color 0.25s, font-size 0.25s;
+  transition: color 0.25s, font-size 0.25s;
 }
 
 .navdiv{
@@ -84,9 +107,10 @@ p.nav-link-item{
 }
 
 .nav-link-item:hover{
-  /* background-color: #5F4B8B; */
   color:#5F4B8B;
-  font-weight: 800;
+  font-weight: 600;
+  font-size: 17px;
+  text-shadow: 1px 5px 10px #999;
 }
 
 header {
@@ -100,8 +124,8 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 30px; /* Set the fixed height of the footer here */
-  line-height: 25px; /* Vertically center the text there */
+  height: 30px;
+  line-height: 25px;
   background-color: #f0f0f0;
   text-align: center;
 }
@@ -110,16 +134,22 @@ header {
   font-size: 10px;
 }
 
+.footer-margin{
+  height: 15px;
+}
+
 .largediv{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 450px;
 }
 
 .largediv2{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 450px
 }
 
 .chs{
@@ -143,8 +173,8 @@ header {
 }
 
 .thumbnail:hover{
-  color:black;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.20), 0 12px 40px 0 rgba(0, 0, 0, 0.25);
+  max-height: 101%;
   max-width:101%;
 }
 
@@ -160,9 +190,11 @@ header {
   font-weight: 400;
   font-size: 15px;
   float: left;
+  font-style: italic;
 }
 .thumb-caption-time{
   float: right;
+  font-style: italic;
 }
 
 #profile{
@@ -170,32 +202,26 @@ header {
   max-width: 100%;
 }
 
-h5{
-  font-weight: 800;
-  font-size: 35px;
-  margin: 0;
-}
 
-h6{
-  font-style: italic;
-  margin: 0;
-}
 
 .vid-text{
   font-style: italic;
   font-weight: 200;
 }
 
+.eetext{
+  font-family: 'power_clearregular', cursive;
+  font-size: 100px;
+}
+
 .pikachu{
   display:none;
   position: fixed;
-  /* height: 10%; */
 }
 
 .pikachu-img{
   top: -5%;
   left: 50%;
-  /* margin-top: -456px; */
   margin-left: -513px;
 }
 
@@ -206,8 +232,6 @@ h6{
   background-color: #DDD;
   top: 60%;
   left: 2.5%;
-  /* margin-top: 2px; */
-  /* margin-left: -513px; */
 }
 
 .contact-content{
