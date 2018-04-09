@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 4</title>
+	<link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+    <style>
+		/*Document.forms.1 등등을 사용할것 - 디스커션*/
+    .errormsg {
+        /*font: Use a cool Google font*/
+    	color:red;
+			font-family: 'Modak', cursive;
+    	display:none; }
+    </style>
+
+    <script type="text/javascript">
+    function checkForm(){
+    	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+			var namebox = document.getElementById("fullname");
+			var streetbox = document.getElementById("streetaddr");
+			var nem = document.getElementById("nameerrormsg");
+			var aem = document.getElementById("addrerrormsg");
+			var move1 = false;
+			var move2 = false;
+			if (namebox.value == "") {
+				nem.style.display = "block";
+				move1 = false;
+			} else {
+				nem.style.display = "none";
+				move1 = true;
+			}
+			if(streetbox.value == "") {
+				aem.style.display = "block";
+				move2 = false;
+			}
+			else {
+				aem.style.display = "none";
+				move2 = true;
+			};
+
+			if (move1 == true && move2 == true) {
+			}
+			else {
+				return false;
+			}
+		}
+    </script>
+</head>
+<body>
+    <h1>Challenge 4</h1>
+	<form action="challenge5.html" onsubmit="return checkForm();">
+        <fieldset>
+        <legend>Personal details</legend>
+          <label for="fullname">Full name: </label>
+            <input type="text" name="fullname" id="fullname"><br/>
+            <p class="errormsg" id="nameerrormsg">Please enter your name above!</p>
+
+          <label for ="streetaddr"></label>
+            Street Address:
+            <input type="text" name="streetaddr" id="streetaddr">
+            <p class="errormsg" id="addrerrormsg">Please enter your street address!</p>
+        </fieldset>
+        <input type="submit" value="Submit it!">
+    </form>
+</body>
+</html>

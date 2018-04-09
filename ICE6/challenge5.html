@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 5</title>
+	<style>
+	body{
+		margin: 2%;
+		border: 1px solid black;
+		background-color: #b3b3b3;
+	}
+	#image{
+    	line-height:325px;
+		width: 388px;
+    	height: 325px;
+		border:5px solid black;
+		margin:0 auto;
+    	background-repeat: no-repeat;
+    	color:#FFFFFF;
+    	text-align: center;
+    	background-color: #8e68ff;
+    	background-size: 100%;
+    	margin-bottom:25px;
+    	font-size:150%;
+	}
+	.preview{
+		width:10%;
+		margin-left:17%;
+    	border: 10px solid black;
+	}
+	img{
+		width:95%;
+	}
+	h1{
+		text-align: center;
+	}
+	</style>
+
+
+</head>
+
+<body>
+	<h1>Challenge 5</h1>
+		<div id = "image">
+			Hover over an image below.
+		</div>
+
+		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+		<img class = "preview" tabindex = "1"
+			id = "thumb0"
+			alt = "Styling with a Bandana"
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg"
+			onmouseover= "onfunc(0)" onmouseout="offfunc()" onfocus="onfunc(0)" onblur="offfunc()"
+			>
+
+
+		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+		<img class = "preview" tabindex = "2"
+			id = "thumb1"
+			alt = "With My Boy"
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
+			onmouseover= "onfunc(1)" onmouseout="offfunc()" onfocus="onfunc(1)" onblur="offfunc()"
+			>
+
+		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+		<img class = "preview" tabindex = "3"
+			id = "thumb2"
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
+			alt = "Young Puppy"
+			onmouseover= "onfunc(2)" onmouseout="offfunc()" onfocus="onfunc(2)" onblur="offfunc()"
+			>
+</body>z
+<script type="text/javascript">
+	// I used Two functions here.  Starter idea at:
+	// https://codepen.io/ColleenEMc/pen/XmZzWw
+
+	// ::::Note::::
+	// I moved the script down here because setting variables (such as 'image')
+	// wouldn't work due to it being assigned before HTML loads. Or that's what I
+	// concluded at. It works fine down here.
+	// ::::Note::::
+
+	var image = document.getElementById("image");
+	var img0 = document.getElementById("thumb0");
+	var img1 = document.getElementById("thumb1");
+	var img2 = document.getElementById("thumb2");
+
+	function onfunc(i) {
+		imgi = eval('img'+i)
+		image.style.backgroundImage = "url("+imgi.src+")";
+		image.innerHTML = imgi.alt;
+	}
+
+	function offfunc() {
+		image.style.backgroundImage = "";
+		image.innerHTML = "Hover over an image below.";
+	}
+</script>
+</html>
