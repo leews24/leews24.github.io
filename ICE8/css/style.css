@@ -1,0 +1,108 @@
+*{
+  color:#DCDCDD;
+  margin:15px 0;
+  font-size: 103%;
+}
+::-moz-selection { /* Code for Firefox */
+    color: #DCDCDD;
+    background: #1C2B38;
+}
+::selection {
+    color: #DCDCDD;
+    background: #1C2B38;
+}
+
+body{
+  background-color: #DCDCDD;
+  /* color:#2B2D42; */
+}
+
+h2{
+  font-size: 70px;
+  width: 50%;
+  margin: 100px 0 25px 25%;
+  text-shadow: 5px 10px 18px #888888;
+}
+
+h4{
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+form{
+  background-color: #4C5C68;
+  color:#DCDCDD;
+  width: 50%;
+  margin-left: 25%;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+button, input[value=Apply]{
+  border-radius: 5px;
+  background-color: #233747;
+  color:#DCDCDD;
+  border: 0;
+  box-shadow: none;
+  -webkit-transition: background-color 0.25s; /* Safari */
+  transition: background-color 0.25s;
+  padding: 7px;
+}
+
+button:hover, input[value=Apply]:hover {
+  background-color: #1C2B38;
+  cursor: pointer;
+}
+
+input[value=Apply]{
+  width: 30%;
+  margin-left: 35%;
+  font-size: 2.6vw;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input, select {
+  background-color: #DCDCDD;
+  color: #46494C;
+  margin:0 15px;
+}
+
+
+
+optgroup, option{
+  color:#46494C;
+}
+
+input[name=startdate], input[name=salary], input[name=locations]{
+  margin:15px 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #4C5C68;
+    }
+    form{
+      background-color: #4C5C68;
+      color:#DCDCDD;
+      width:100%;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 0;
+      margin-left: 0;
+    }
+    h2{
+      display: none;
+    }
+    input[value=Apply]{
+      width: 30%;
+      margin:0 35%;
+      font-size: 30px;
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+    }
+}
