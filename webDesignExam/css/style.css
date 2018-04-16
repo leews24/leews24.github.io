@@ -1,0 +1,9 @@
+.thumbs {
+  border: 5px solid blue;
+  padding: 5%;
+  height: 100%;
+}
+
+body {
+   background-image: url("../images/doodles.png");
+}

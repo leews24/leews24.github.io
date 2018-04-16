@@ -13,15 +13,31 @@
   </head>
   <body>
     <h1>Won Seok Lee</h1>
-    <img src="images/examPic.JPG" alt="exampic1">
-    <img src="images/UMSI-logo.jpg" alt="exampic2">
-    <br>
-    <button>Show Image</button>
-    <button>Hide Image</button>
+    <div class="container-fluid">
+      <div class="row">
+        <img class="thumbs col-6" src="images/examPic.JPG" alt="exampic1" id="pic1">
+        <img class="thumbs col-6" src="images/UMSI-logo.jpg" alt="exampic2" id="pic2">
+      </div>
+      <div class="row">
+        <button onclick="showfunc()">Show Image</button>
+        <button onclick="hidefunc()">Hide Image</button>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      function hidefunc(){
+        $('#pic1').hide();
+        $('#pic2').css("margin-left","25%");
+      }
+      function showfunc(){
+        $('#pic1').show();
+        $('#pic2').css("margin","0");
+      }
+    </script>
+
   </body>
 </html>
